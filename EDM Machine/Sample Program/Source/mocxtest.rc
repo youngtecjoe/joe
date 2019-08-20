@@ -1,0 +1,514 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif\r\n"
+    "#include ""res\\mocxtest.rc2""  // Microsoft Visual C++ à»äOÇÃÉcÅ[ÉãÇ≈ï“èWÇ≥ÇÍÇΩÉäÉ\Å[ÉX\r\n"
+    "#include ""l.jpn\\afxres.rc""          // ïWèÄÇÃÉRÉìÉ|Å[ÉlÉìÉg\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\mocxtest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " ﬁ∞ºﬁÆ›èÓïÒ mocxtest"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "mocxtest Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1999",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_MOCXTEST_DIALOG DIALOGEX 0, 0, 487, 546
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Mocxtest"
+FONT 9, "ÇlÇr ÇoÉSÉVÉbÉN"
+BEGIN
+    LTEXT           "Mark30 manual",IDC_STATIC,7,7,50,11
+    LTEXT           "machine status:",IDC_STATIC,7,42,58,11
+    LTEXT           "unknow",IDC_MACHINE_STATUS,67,42,49,11
+    LTEXT           "comm. status:",IDC_STATIC,7,60,49,11
+    LTEXT           "Disconnect",IDC_COMM_STATUS,62,60,81,11
+    GROUPBOX        "Step 1: Client setting",IDC_STATIC,7,78,138,114
+    LTEXT           "Username:",IDC_STATIC,14,94,41,12
+    EDITTEXT        IDC_EDIT1,77,93,57,12,ES_AUTOHSCROLL
+    LTEXT           "password:",IDC_STATIC,14,113,41,12
+    EDITTEXT        IDC_EDIT2,77,111,57,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "RAS Username:",IDC_STATIC,14,132,51,12
+    EDITTEXT        IDC_EDIT3,77,129,57,12,ES_AUTOHSCROLL
+    LTEXT           "RAS password:",IDC_STATIC,14,151,52,12
+    EDITTEXT        IDC_EDIT4,77,147,57,12,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Setting",IDC_BUTTON1,53,170,44,14
+    GROUPBOX        "Step 2: Http connecting",IDC_STATIC,7,202,139,68
+    LTEXT           "Address:",IDC_STATIC,14,222,26,12
+    EDITTEXT        IDC_EDIT5,48,219,88,15,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Setting",IDC_BUTTON2,53,248,44,14,WS_DISABLED
+    PUSHBUTTON      "LogStart",IDC_BUTTON_LOGSTART,7,275,50,14
+    PUSHBUTTON      "LogEnd",IDC_BUTTON_LOGEND,71,274,50,14
+    GROUPBOX        "Step 3: Mark30 connecting",IDC_STATIC,7,296,139,70
+    LTEXT           "Machine:",IDC_STATIC,15,321,26,12
+    EDITTEXT        IDC_EDIT6,49,318,88,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Connect",IDC_BUTTON3,49,342,44,14
+    PUSHBUTTON      "RUN CYCLE!!!",IDC_BUTTON13,7,370,50,14
+    LTEXT           "ocx version:",IDC_STATIC,7,24,53,12
+    LTEXT           "1.00",IDC_OCX_VERSION,69,19,49,17,SS_CENTERIMAGE
+    PUSHBUTTON      "Run",IDC_BUTTON4,251,40,50,13
+    LTEXT           "Get the machine status:",IDC_STATIC,162,40,78,8
+    LTEXT           "Send filename:(such as *.nc)",IDC_STATIC,163,51,90,8
+    EDITTEXT        IDC_EDIT7,162,64,63,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON15,226,64,16,12
+    PUSHBUTTON      "Run",IDC_BUTTON5,251,64,50,13
+    LTEXT           "Delete file:(such as ENKAKU)",IDC_STATIC,163,82,105,10
+    EDITTEXT        IDC_EDIT8,162,97,79,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Run",IDC_BUTTON6,251,97,50,13
+    LTEXT           "Key operation:",IDC_STATIC,163,115,71,10
+    COMBOBOX        IDC_COMBO1,162,131,78,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Run",IDC_BUTTON7,251,130,50,13
+    LTEXT           "Get offset file:",IDC_STATIC,163,149,71,10
+    EDITTEXT        IDC_EDIT10,162,164,79,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Run",IDC_BUTTON8,251,164,50,13
+    LTEXT           "Get history file:",IDC_STATIC,163,184,71,10
+    EDITTEXT        IDC_EDIT11,162,199,79,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Run",IDC_BUTTON9,251,199,50,13
+    LTEXT           "Pause",IDC_STATIC,162,217,82,8
+    CONTROL         "Pause",IDC_PAUSE,"Button",BS_AUTORADIOBUTTON,171,229,34,
+                    10
+    CONTROL         "run",IDC_RUN,"Button",BS_AUTORADIOBUTTON,214,230,25,10
+    PUSHBUTTON      "Run",IDC_BUTTON10,251,227,50,13
+    LTEXT           "Program run:(such ENKAKU)",IDC_STATIC,164,246,88,8
+    EDITTEXT        IDC_EDIT9,162,262,79,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Run",IDC_BUTTON11,251,262,50,13
+    PUSHBUTTON      "GetVoltage",IDC_BN_GET_VOLTAGE,162,281,79,13
+    EDITTEXT        IDC_EDIT_VOLTAGE,250,281,50,13,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_RIGHT
+    PUSHBUTTON      "GetElectricity",IDC_BN_GET_ELECTRICITY,162,297,79,13
+    EDITTEXT        IDC_EDIT_ELECTRICITY,250,297,50,13,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_RIGHT
+    PUSHBUTTON      "GetFrequency",IDC_BN_GET_FREQUENCY,162,313,79,13
+    EDITTEXT        IDC_EDIT_FREQUENCY,250,313,50,13,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_RIGHT
+    PUSHBUTTON      "GetFSpeed",IDC_BN_GET_F_SPEED,162,329,79,13
+    EDITTEXT        IDC_EDIT_F_SPEED,250,329,50,13,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_RIGHT
+    GROUPBOX        "Step 5: disconnect mark30",IDC_STATIC,157,358,96,32
+    PUSHBUTTON      "Cut",IDC_BUTTON12,186,370,50,14
+    DEFPUSHBUTTON   "Close",IDOK,257,370,50,14
+    GROUPBOX        "Step4: Param running",IDC_STATIC,156,15,154,336
+    EDITTEXT        IDC_EDIT_METHOD_RESULT,318,40,162,78,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | 
+                    WS_VSCROLL
+    PUSHBUTTON      "Clear Method&&Attribute Message",
+                    IDC_BN_CLEAR_METHOD_MSG,318,19,108,15
+    PUSHBUTTON      "Clear Event Message",IDC_BN_CLEAR_EVENT_MSG,318,129,108,
+                    15
+    EDITTEXT        IDC_EDIT_EVENT_RESULT,318,152,162,78,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | 
+                    WS_VSCROLL
+    CONTROL         "Loop Run",IDC_CHECK_LOOP_RUN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,252,247,43,10
+    PUSHBUTTON      "GetMaxFrequency",IDC_BN_GET_MAX_FREQUENCY,318,234,79,13
+    EDITTEXT        IDC_EDIT_MAX_FREQUENCY,406,234,50,13,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_RIGHT
+    PUSHBUTTON      "GetSigOnMaxFrequency",IDC_BN_GET_SIGON_MAX_FREQUENCY,
+                    318,250,79,13
+    EDITTEXT        IDC_EDIT_SIGON_MAX_FREQUENCY,406,250,50,13,
+                    ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    PUSHBUTTON      "GetResistivity1",IDC_BN_GET_RESISITIVITY_1,318,266,79,
+                    13
+    EDITTEXT        IDC_EDIT_RESISITIVITY_1,406,266,50,13,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_RIGHT
+    PUSHBUTTON      "GetResistivity2",IDC_BN_GET_RESISITIVITY_2,318,282,79,
+                    13
+    EDITTEXT        IDC_EDIT_RESISITIVITY_2,406,282,50,13,ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_RIGHT
+    PUSHBUTTON      "GetInch",IDC_BN_GET_INCH,318,298,79,13
+    EDITTEXT        IDC_EDIT_INCH,406,298,50,14,ES_AUTOHSCROLL | ES_READONLY,
+                    WS_EX_RIGHT
+    PUSHBUTTON      "GetDigit",IDC_BN_GET_DIGIT,318,314,79,13
+    EDITTEXT        IDC_EDIT_DIGIT,406,314,50,13,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_DISABLED,WS_EX_RIGHT
+    PUSHBUTTON      "Get all the values of @10989",IDC_BN_GET_10989,318,332,
+                    138,15
+    CONTROL         "",IDC_MK30COMMCTRL1,
+                    "{AD027D26-F975-11D2-9023-0040C7577372}",NOT WS_VISIBLE | 
+                    WS_TABSTOP,115,35,28,25
+    PUSHBUTTON      "GetCoordOrg",IDC_BN_GET_COORD_ORG,318,364,79,13
+    EDITTEXT        IDC_EDIT_GET_COORD_ORG,433,363,21,13,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    LTEXT           "CoordSys",IDC_STATIC,402,365,29,8
+    PUSHBUTTON      "GetCoordSys",IDC_BN_GET_COORD_SYS,318,349,79,13
+    PUSHBUTTON      "GetMachCoord",IDC_BN_GET_MACH_COORD,318,379,79,13
+    PUSHBUTTON      "GetCoord",IDC_BN_GET_COORD,318,395,79,13
+    EDITTEXT        IDC_EDIT_GET_COORD,433,393,21,13,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    LTEXT           "CoordSys",IDC_STATIC,403,396,29,8
+    PUSHBUTTON      "PowerOn",IDC_BN_POWER_ON,251,22,50,13
+    PUSHBUTTON      "GetMachineKind",IDC_BUTTON_GetMachineKind,8,393,79,13
+    PUSHBUTTON      "GetCondition",IDC_BUTTON_GetCondition,8,410,79,13
+    PUSHBUTTON      "DoConditionSearch",IDC_BTN_DoConditionSearch,8,444,79,
+                    13
+    PUSHBUTTON      "GetConditionType",IDC_BTN_GET_COND_TYPE,8,427,79,13
+    EDITTEXT        IDC_EDIT_COND_TYPE,96,427,40,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "GetMachineLock",IDC_BTN_GET_MACHINELOCK,8,461,79,13
+    EDITTEXT        IDC_EDIT_GET_MACHINELOCK,96,461,40,13,ES_RIGHT | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Number",IDC_STATIC,7,479,27,8
+    LTEXT           "Macro Data",IDC_STATIC,51,479,38,8
+    EDITTEXT        IDC_EDIT_OFFSET_NUMBER,7,492,40,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_OFFSET_VALUE,51,492,40,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_MACRO_NUMBER,7,509,40,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_MACRO_VALUE,51,509,40,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "GetOffsetVar",IDC_BTN_GET_OFFSETVAR,96,492,50,13
+    PUSHBUTTON      "SetMacroVar",IDC_BTN_SET_MACROVAR,96,509,50,13
+    EDITTEXT        IDC_EDIT_GET_MACRO_NUMBER,7,526,40,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_GET_MACRO_VALUE,51,526,40,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "GetMacroVar",IDC_BTN_GET_MACROVAR,96,526,50,13
+    LTEXT           "nStartNo:",IDC_STATIC_StartNo,161,399,31,8
+    LTEXT           "nEndNo:",IDC_STATIC_EndNo,232,400,29,8
+    EDITTEXT        IDC_EDIT_GET_MACROVAR_STARTNO,194,398,33,13,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_GET_MACROVAR_ENDNO,268,398,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "GetMacroVarRange",IDC_BTN_GET_MACROVAR_RANGE,162,413,
+                    139,13
+    PUSHBUTTON      "GetMacroVarRangeSafeArray",
+                    IDC_BTN_GET_MACROVAR_SAFEARRAY,162,429,139,13
+    PUSHBUTTON      "SetMacroVarRange",IDC_BTN_SET_MACROVAR_RANGE,163,463,
+                    138,13
+    PUSHBUTTON      "GetRunningFileName",IDC_GETRUNNINGFILENAME,318,411,136,
+                    13
+    PUSHBUTTON      "GetRunningMainNcFileFirstLine",
+                    IDC_GETRUNNINGMAINNCFILEFIRSTLINE,318,427,136,13
+    PUSHBUTTON      "SetMacroVarRangeSafeArray",
+                    IDC_BTN_SET_MACROVAR_SAFEARRAY,163,479,138,13
+    EDITTEXT        IDC_EDIT_SET_1STMACRO_VALUE,238,447,57,13,ES_AUTOHSCROLL
+    LTEXT           "Set 1st. Macro Value:",IDC_STATIC_1STMACRO,163,450,70,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "mocxtest MFC ±Ãﬂÿπ∞ºÆ›\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "mocxtest\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "mocxtest.EXE\0"
+            VALUE "ProductName", "mocxtest ±Ãﬂÿπ∞ºÆ›\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MOCXTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 480
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 539
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MOCXTEST_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 4, 0
+0x464f, 0x0046, 
+    IDC_COMBO1, 0x403, 4, 0
+0x4341, 0x004b, 
+    IDC_COMBO1, 0x403, 5, 0
+0x4148, 0x544c, "\000" 
+    IDC_COMBO1, 0x403, 4, 0
+0x4e45, 0x0054, 
+    IDC_MK30COMMCTRL1, 0x376, 28, 0
+0x0000, 0x0000, 0x0041, 0x0002, 0x05ca, 0x0000, 0x052b, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            " ﬁ∞ºﬁÆ›èÓïÒ(mocxtest) (&A)..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ITEMNAMENEW0        " ON"
+    IDS_ITEMNAMENEW1        "OFF"
+    IDS_ITEMNAMENEW2        "  IP"
+    IDS_ITEMNAMENEW3        "HRP"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ITEMNAMENEW4        "MAO"
+    IDS_ITEMNAMENEW5        " SV"
+    IDS_ITEMNAMENEW6        "V"
+    IDS_ITEMNAMENEW7        "  SF"
+    IDS_ITEMNAMENEW8        "C"
+    IDS_ITEMNAMENEW9        "PIK"
+    IDS_ITEMNAMENEW10       "CTRL"
+    IDS_ITEMNAMENEW11       " WK"
+    IDS_ITEMNAMENEW12       " WT"
+    IDS_ITEMNAMENEW13       " WS"
+    IDS_ITEMNAMENEW14       " WP"
+    IDS_ITEMNAMENEW15       "  PC"
+    IDS_ITEMNAMENEW16       "SK"
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_SEARCHCONDITION DIALOG DISCARDABLE  0, 0, 300, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cond."
+FONT 10, "–¬ÀŒÃÂ"
+BEGIN
+    LTEXT           "cond type",IDC_STATIC,7,7,46,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_DATABASE,62,7,84,77,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Mach.Fluid",IDC_STATIC,7,27,46,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_LQUID,62,27,84,79,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Wire Dia ",IDC_STATIC,7,45,46,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_WRIDAM,62,47,84,56,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Wire Material",IDC_STATIC,7,65,54,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_WIREM,62,67,84,80,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Work",IDC_STATIC,7,85,46,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_MATER,62,87,84,80,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Thick(mm)",IDC_STATIC,7,105,46,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_THICK,62,107,84,49,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Mach. Type",IDC_STATIC,7,125,46,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_KIND,62,127,84,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Nozzle Posi",IDC_STATIC,7,145,46,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_LQKND,62,147,84,63,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Cond. Number",IDC_STATIC,7,167,54,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_CUTN,62,167,84,83,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Surface",IDC_STATIC,155,7,54,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_ROUGH,209,7,84,69,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "BS(mm)",IDC_STATIC,155,27,54,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_BS,209,27,84,88,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "comment",IDC_STATIC,155,47,54,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_COMMENT,209,47,84,104,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Change Offset",IDC_STATIC,155,67,54,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_OFSTAJST,209,67,84,96,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Output AIC",IDC_STATIC,155,87,54,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_AIC,209,87,84,82,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Output SFCC",IDC_STATIC,155,107,54,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_SFCC,209,107,84,81,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Precision",IDC_STATIC,155,127,54,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_PRECISION,209,127,84,12,ES_AUTOHSCROLL
+    LTEXT           "BSA",IDC_STATIC,155,147,54,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_BSA,209,147,84,82,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Research Num",IDC_STATIC_COND_NUM,155,167,54,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_RESEARCH_NUM,209,167,84,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "DoCondition",IDOK,79,188,64,14
+    PUSHBUTTON      "Cancel",IDCANCEL,155,188,64,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DLG_SEARCHCONDITION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif
+#include "res\mocxtest.rc2"  // Microsoft Visual C++ à»äOÇÃÉcÅ[ÉãÇ≈ï“èWÇ≥ÇÍÇΩÉäÉ\Å[ÉX
+#include "l.jpn\afxres.rc"          // ïWèÄÇÃÉRÉìÉ|Å[ÉlÉìÉg
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
